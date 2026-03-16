@@ -1,4 +1,7 @@
+title: 9thinking Blog
+description: Notes on coding, learning, and building in public.
 theme: minima
-title: 9thinking's personal blog
-description: This is where I share cool stuff about my life
-author: 9thinking
+url: "https://9thinking.github.io"
+baseurl: "/skills-github-pages"
+markdown: kramdown
+show_excerpts: true
