@@ -1,0 +1,97 @@
+---
+---
+
+@import "minima";
+
+:root {
+  --paper: #fff9f1;
+  --paper-2: #fff3e5;
+  --ink: #4a3a2c;
+  --ink-soft: #7a6859;
+  --accent: #d9865b;
+  --accent-deep: #b86a45;
+  --line: #eadfce;
+  --card: #fffdf9;
+  --shadow: 0 8px 22px rgba(95, 72, 52, 0.12);
+}
+
+html {
+  background: linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+}
+
+body {
+  color: var(--ink);
+  background: transparent;
+  font-family: "LXGW WenKai", "PingFang SC", "Hiragino Sans GB", "Noto Serif SC", "Segoe UI", serif;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--accent-deep);
+  text-underline-offset: 3px;
+  transition: all 0.22s ease;
+}
+a:hover { color: var(--accent); }
+
+.site-header {
+  border-top: 6px solid #e6b89c;
+  border-bottom: 1px dashed var(--line);
+  background: #fffaf4;
+}
+
+.site-title, .site-title:visited {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.site-nav .page-link { color: var(--ink-soft); }
+.site-nav .page-link:hover { color: var(--accent-deep); }
+
+.wrapper { max-width: 920px; }
+
+.post-list > li {
+  list-style: none;
+  margin-bottom: 1.1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.post-list > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(95,72,52,.18);
+}
+
+.post-content {
+  background: #fffdfa;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: clamp(1.1rem, 2.2vw, 2rem);
+  box-shadow: var(--shadow);
+}
+
+blockquote {
+  color: #6b5948;
+  border-left: 4px solid var(--accent);
+  background: #fff4e8;
+  padding: .65rem 1rem;
+  border-radius: 8px;
+}
+
+pre { background: #2f2721; border: 1px solid #473c33; border-radius: 10px; }
+code { border-radius: 8px; }
+
+.site-footer {
+  border-top: 1px dashed var(--line);
+  background: #fffaf4;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 700px) {
+  .wrapper { padding-left: 16px; padding-right: 16px; }
+  .post-content { padding: 1rem; }
+  .post-list > li { padding: .85rem; }
+}
